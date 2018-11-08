@@ -62,6 +62,8 @@ function init(context) {
 
 (function() {
   Letc.snippet.prototype.onStart = function() {
-    ymaps.ready(init.bind(this));
+    var context = this;
+    console.log("this", this, "context", context);
+    ymaps.ready(init.bind(context));
   };
 }).call(this);
