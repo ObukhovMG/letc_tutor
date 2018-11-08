@@ -1,6 +1,6 @@
-function init() {
-    console.log("this ",this)
-    var myMap = new ymaps.Map(this._id, {
+function init(context) {
+    console.log("this ",context)
+    var myMap = new ymaps.Map(context._id, {
             center: [55.73, 37.75],
             zoom: 10
         }, {
@@ -62,6 +62,6 @@ function init() {
 
 (function() {
   Letc.snippet.prototype.onStart = function() {
-    ymaps.ready(init);
+    ymaps.ready(init.bind(this));
   };
 }).call(this);
