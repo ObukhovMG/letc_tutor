@@ -1,5 +1,6 @@
 function init() {
-    var myMap = new ymaps.Map("map", {
+    console.log("this ",this)
+    var myMap = new ymaps.Map(this._id, {
             center: [55.73, 37.75],
             zoom: 10
         }, {
