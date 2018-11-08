@@ -57,7 +57,7 @@ lesson 10 - some demo with remote snippet code
 lesson 11 - Try to plug in your own work here. See example in #10
 	object.kids[1]
 		.{
-			creator: 'https://yadi.sk/d/GTmRZEi_8QpzJQ'
+			creator: 'https://cdn.jsdelivr.net/gh/ObukhovMG/letc_tutor@1.3/lesson_11_snippet.js'
 			vendorOpt: [
 				{
 					script: {
